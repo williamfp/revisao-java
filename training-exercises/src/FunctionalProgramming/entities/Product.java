@@ -25,14 +25,24 @@ public class Product {
         this.price = price;
     }
 
-    //Implemented as part of Solution #2
+    //Implemented as part of Solution #2 (Predicate)
     public static boolean staticProductPredicate(Product p){
         return p.getPrice() >= 100;
     }
 
-    //Implemented as part of Solution #3
+    //Implemented as part of Solution #3 (Predicate)
     public boolean nonStaticProductPredicate(){
         return this.getPrice() >= 100;
+    }
+
+    //Implemented as part of Solution #2 (Consumer)
+    public static void staticPriceUpdate(Product p){
+        p.setPrice(p.getPrice() * 1.1);
+    }
+
+    //Implemented as part of Solution #3 (Consumer)
+    public void nonStaticPriceUpdate(){
+        price = price * 1.1;
     }
 
     @Override
