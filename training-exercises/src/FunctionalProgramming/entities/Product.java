@@ -45,6 +45,16 @@ public class Product {
         price = price * 1.1;
     }
 
+    //Implemented as part of Solution #2 (Function)
+    public static String staticUpperCaseName(Product p){
+        return p.getName().toUpperCase();
+    }
+
+    //Implemented as part of Solution #3 (Function)
+    public String nonStaticUpperCaseName(){
+        return this.getName().toUpperCase();
+    }
+
     @Override
     public String toString() {
         return "Product{" +
