@@ -10,6 +10,7 @@ services:
       - sb-course-network
     environment:
       - POSTGRES_PASSWORD=1234567
+      - POSTGRES_DB=springboot_course
 
   pgadmin:
     image: dpage/pgadmin4:4
